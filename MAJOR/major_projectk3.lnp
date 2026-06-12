@@ -1,0 +1,13 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\main.o"
+".\uart0.o"
+".\delay.o"
+".\esp01.o"
+".\adc.o"
+".\lcd.o"
+".\rtc.o"
+--strict --scatter ".\major_projectk3.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\major_projectk3.map" -o .\major_projectk3.axf
